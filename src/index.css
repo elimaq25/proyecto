@@ -95,6 +95,7 @@ header ul li a{
 
 
 /*------------------Agregar al carrito-----------------*/
+
 .agregar{
   background-color: antiquewhite;
   width: 20%;
@@ -126,13 +127,20 @@ header ul li a{
 
 /*------------------Productos-----------------*/
 
+.titleCatalogo{
+  font-size: 2.4rem;
+  padding: 2rem 0 0 0;
+  color: purple
+}
+
 .productos{
   padding: 5rem 2 rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 3rem 1rem;
   box-sizing: border-box;
+  align-content: center;
 }
 
 .producto{
@@ -151,6 +159,25 @@ header ul li a{
   width: 400px;
   height: 400px;
   padding: 5rem 2 rem;
+  margin-top: 2rem;
+  
+}
+
+.producto__footer{
+  padding: 1rem;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  font-family: Helvetica, sans-serif;
+}
+
+.details{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.74);
+  text-decoration: none;
 }
 
 /*------------------Detalle de producto-----------------*/
@@ -193,9 +220,72 @@ header ul li a{
 
 .id_detalle{
  margin-top: 100px;
+ font-weight: 400;
+ font-size: 20px;
 }
 
 .carri{
   border-bottom: 300px;
   margin-left: 100px;
+  margin-top: 100px;
+}
+
+/*------------------Carrito-----------------*/
+.compra{
+  background-color: antiquewhite;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+.encabezado{
+  background-color: aliceblue;
+}
+
+.totalCart{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  background-color: aquamarine;
+  text-align: unset;
+}
+
+.compraCart{
+  border: solid 1px black;
+  padding: 10px;
+
+}
+
+.form{
+  width: 300px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.field{
+  border: solid 1px purple;
+  padding: 10px;
+  width: 280px;
+}
+
+.field:focus{
+  border-color: bisque;
+}
+.enviar{
+  border-radius: 6px;
+  background-color: palevioletred;
+  color: white;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 280px;
+}
+
+.enviar:hover{
+  background-color: aquamarine;
+  color: black;
 }

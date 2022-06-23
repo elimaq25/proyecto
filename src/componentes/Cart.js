@@ -71,14 +71,19 @@ const onSubmit = async (e) => {
             )
             })
             }
-            <p>Total: ${total}</p> 
+            <p className='totalCart'>Total: ${total}</p> 
             <br></br>
             <h1>Finalizar Compra</h1>
-    <form onSubmit={onSubmit}>
+    <form className='form' onSubmit={onSubmit} >
         <h3>Datos para confirmar compra</h3>
+        <br></br>
+      
         <label>
             Nombre</label>
+            <br></br>
+            <br></br>
         <input 
+        className='field'
         type="text"
         required
         name="nombre" 
@@ -88,9 +93,13 @@ const onSubmit = async (e) => {
 
         </input>
         <br></br>
+        <br></br>
         <label>
             Telefono</label>
+            <br></br>
+            <br></br>
         <input 
+        className='field'
         type="number"
         required
         name="telefono" 
@@ -100,16 +109,21 @@ const onSubmit = async (e) => {
 
         </input>
         <br></br>
+        <br></br>
         <label>
             Correo electronico</label>
-        <input 
+            <br></br>
+            <br></br>
+        <input
+        className='field' 
         type="text"
         required
         name="correo" 
         value={buyer.correo} 
         onChange={handleOnChange}></input>
         <br></br>
-        <button>Enviar</button>
+        <br></br>
+        <button className='enviar'>Enviar</button>
     </form>
     
           </>

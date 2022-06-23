@@ -21,7 +21,8 @@ const Counter = ({stock, initial, onAdd}) => {
    
    
     return (
-    <section className='agregar'>
+    <section className='agregaralcart'>
+    <div className='agregar'>
         <div className='botones'>
             <button  onClick={restaQty} > - </button>
             <p> {qty} </p>
@@ -40,7 +41,8 @@ const Counter = ({stock, initial, onAdd}) => {
        
        
      
-       </section> 
+       </div> 
+       </section>
   )
 }
 
